@@ -1,0 +1,459 @@
+/*
+==========================================
+                 GENERAL RULES
+==========================================
+*/
+/*
+*,
+*:before,
+*:after {
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing:border-box;
+	       -box-sizing: border-box;
+}
+
+body {
+	position: relative;
+}
+
+ul {
+	list-style: none;
+}
+
+li {
+	float: left;
+}
+
+a {
+	color: inherit;
+}
+
+.hidden {
+	position: absolute;
+	clip: rect(1px 1px 1px 1px); IE 6 & 7
+	clip: rect(1px, 1px, 1px, 1px);
+}*/
+a {
+	color: inherit;
+}
+
+a:hover {
+	color: inherit;
+}
+
+button {
+	padding: 15px 25px;
+	font-family: sans-serif;
+	font-weight: bold;
+	font-size: 15px;
+	color: #fff;
+	border: none;
+	border-radius: 4px;
+	background: none;
+}
+
+button:hover {
+	background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3))
+}
+/*
+==========================================
+                 top-navbar
+==========================================
+*/
+.header-logo {
+	width: 220px;
+	height: 50px;
+	background: url("https://g.europe.newsweek.com/www/img/redesign/sprite.png") -3px 0px no-repeat #ff0500;
+}
+.header-logo a:hover{
+	text-decoration: none;
+	border-bottom: none;
+}
+
+nav a:hover {
+	border-bottom: 1px solid #ff0500;
+}
+
+#header-nav {
+	width: 100%;
+	box-shadow: 0 5px 5px #fff;
+	font-size: 12px;
+	font-family: sans-serif;
+	color: #fff;
+}
+#header-nav a {
+	color: #fff;
+}
+#header-nav li {
+	display: inline-block;
+}
+
+.navbar-right {
+	margin-right: 10px;
+	float: right;
+}
+
+#header-nav #subscribe-icon {
+	text-transform: uppercase;
+	font-weight: bold;
+	color: #fee616;
+}
+
+#header-nav #subscribe-icon:hover {
+    color: #fff;
+}
+
+#header-nav #user-icon:hover {
+	color:#ff0500;
+	background-color: #fff;
+}
+/*
+==========================================
+                 container: main-sections
+==========================================
+*/
+.container {
+	max-width: 1280px;
+
+}
+
+.main-sections {
+	margin-top: 65px;
+}
+
+article {
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.article-category {
+	font-size: 14px;
+	font-weight: bold;
+	text-transform: uppercase;
+	color:#ff0500;
+	margin-bottom: 2px;
+}
+
+.article-category a:hover {
+	color: #000;
+}
+
+.article-heading {
+	color: #000;
+	font-weight: bold;
+	font-size: 20px;
+	margin-top: 0;
+}
+
+.article-summary  {
+	margin-top: 10px;
+	font-family: serif;
+	font-size: 18px;
+	line-height: 1.2;
+	color: #333;
+}
+
+.top-article-img {
+	width: 100%;
+	height: auto;
+	position: relative;
+}
+
+.top-article header {
+	width: 100%;
+	padding-top: 20px;
+	position: absolute;
+	bottom: 0;
+	border-top: 2px solid #ff0500;
+	background: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,1))
+}
+
+.top-article h2 {
+   font-size: 30px;
+   max-width: 600px;
+   text-align: center;
+   margin-left:auto;
+   margin-right: auto;
+   margin-bottom: 10px;
+}
+.top-article .article-category{
+	text-align: center;
+	margin-bottom: 8px;
+}
+.top-article .article-summary {
+	max-width: 700px;
+	margin-left:auto;
+    margin-right: auto;
+	font-size: 20px;
+	text-align: center;
+}
+
+.news-list {
+	list-style-type: square;
+	font-size: 24px;
+	line-height: 0.9;
+    color: #1fc7ff ;
+	padding-left: 22px;
+	margin: 0;
+}
+.news-list a{
+	font-size: 14px;
+   font-weight: bold; 
+   color: #000;
+}
+
+.latest-news-list .news-list,
+.this-week .news-list {
+	color: #ff0500;
+	padding-left: 0;
+}
+
+.latest-news-list .news-list li,
+.this-week .news-list li{
+	padding-top: 10px;
+	padding-bottom: 10px;
+	border-bottom: 1px solid #e0e0e0;
+}
+
+.latest-news-list .list2 li:last-child,
+.this-week .list2 li:last-child {
+	border-bottom: none;
+} 
+
+.latest-news-list h2 {
+	font-family: serif;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.section-heading {
+	position: relative;
+	font-family: serif;
+	font-size: 26px;
+	font-weight: bold;
+	text-align: center;
+	margin: 50px auto 20px auto;
+}
+.section-heading::after {
+	background: #ff0500;
+	content: "";
+	height: 2px;
+	width: 12%;
+    position: absolute;
+    left: 44%;
+    bottom: -5px;
+}
+
+.bottom-line {
+	border-bottom: 1px solid #bfbfbf;
+}
+
+.article-sponsored {
+	background: #f3fbfe;
+}
+
+
+.news-in-photos {
+	margin: 30px 0;
+	padding: 35px 20px;
+	background: #e0e0e0;
+}
+
+.news-in-photos h1 {
+	text-transform: uppercase;
+	font-family: serif;
+	font-size: 50px;
+	color: #ff0500;
+	padding-bottom: 35px;
+	border-bottom: 1px solid #000;
+}
+
+.news-in-photos h1 a:hover {
+   color: #000;
+}
+
+.news-in-photos figcaption {
+	padding: 30px 0;
+}
+
+.news-in-photos .news-list {
+	font-size: 40px;
+}
+
+.news-in-photos .news-list a {
+	font-size: 22px;
+}
+.news-in-photos figcaption p {
+	margin-top: 20px;
+	font-size: 14px;
+	font-weight: bold;
+
+}
+
+.news-in-photos button {
+	background: #00bcfd;
+}
+
+.news-in-photos button:hover {
+	background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),#00bcfd;
+}
+
+.this-week header {
+	text-align: center;
+	text-transform: uppercase;
+}
+.this-week h2 {
+	background: #ff0500;
+	color: #fff;
+	width: 130px;
+	font-size: 16px;
+	font-weight: bold;
+	padding:15px;
+    margin: 20px auto;
+}
+
+.this-week h1 { 
+	font-size: 28px;
+	color: #ff0500;
+	font-weight: bold;
+
+} 
+.this-week figcaption {
+	font-size: 32px;
+	color: #000;
+	text-align: left;
+	padding-bottom: 15px;
+	border-bottom: 2px solid #000;
+}
+
+.this-week .news-list {
+	margin-top: 20px;
+	text-align: left;
+	text-transform: uppercase;
+}
+
+.this-week button {
+	margin-top: 20px;
+	background: #ff0500;
+}
+
+.this-week button:hover {
+	background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),#ff0500;
+}
+
+
+
+
+/*
+==========================================
+                 footer
+==========================================
+*/
+footer {
+	margin-top: 30px;
+	padding: 20px 40px 10px 40px;
+	border-top: 2px solid #ff0500;
+	width: 100%;
+    background: #000;
+    color: #fff;
+}
+#footer-nav {
+	margin-bottom: 40px;
+	vertical-align: center;
+}
+#footer-nav ul {
+	font-weight: bold;
+	font-size: 14px;
+	
+}
+#footer-nav li {
+	display: inline-block;
+}
+#footer-nav a:hover {
+	background: inherit;
+	text-decoration: underline;
+}
+
+.footer-logo {
+	margin-right: 15px;
+	width: 220px;
+	height: 50px;
+	background:url("https://g.europe.newsweek.com/www/img/redesign/sprite.png") 0 -4px no-repeat #ff0500;
+}
+.footer-logo a:hover{
+	text-decoration: none;
+	background: inherit;
+}
+.icon-fb {
+	margin-right: 20px;
+	width: 46px;
+	height: 46px;
+	background: url("https://g.europe.newsweek.com/www/img/redesign/sprite.png") 0 -120px no-repeat transparent;
+}
+
+.icon-twt {
+	margin-right: 20px;
+	width: 46px;
+	height: 46px;
+	background: url("https://g.europe.newsweek.com/www/img/redesign/sprite.png") -53px -120px no-repeat transparent;
+}
+.icon-google {
+	margin-right: 20px;
+	width: 46px;
+	height: 46px;
+	background: url("https://g.europe.newsweek.com/www/img/redesign/sprite.png") -107px -120px no-repeat transparent;
+}
+.icon-in {
+	width: 46px;
+	height: 46px;
+	background: url("https://g.europe.newsweek.com/www/img/redesign/sprite.png") -160px -120px no-repeat transparent;
+}
+/*
+==========================================
+              @media Section
+==========================================
+*/
+
+@media screen and (max-width: 991px){
+	.header-logo,
+	.footer-logo {
+		width: 55px;
+		background: url("https://g.europe.newsweek.com/www/img/redesign/sprite.png") -3px -53px no-repeat #ff0500;
+	}
+	.top-article header {
+		background: none;
+		position: relative;
+	}
+    .top-article .article-category,
+    .top-article .article-heading,
+    .top-article .article-summary {
+	   max-width: none;
+	   width: 100%;
+	   margin: 0;
+	   text-align: left;
+    }
+    .article-heading {
+    	font-size: 14px;
+    }
+    .top-article .article-heading {
+    	font-size: 20px;
+    }
+    .latest-news-list .news-list li,
+    .this-week .news-list li {
+    	border-bottom: none;
+    }
+    
+}
+
+@media screen and (max-width: 767px){
+	.latest-news-list .news-list li,
+	.this-week .news-list li {
+	    border-bottom: 1px solid #e0e0e0;
+    }
+
+    .latest-news-list .list2 li:last-child,
+    .this-week .list2 li:last-child {
+	    border-bottom: none;
+    } 
+}
+
